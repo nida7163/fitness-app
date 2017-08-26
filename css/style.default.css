@@ -120,6 +120,7 @@ UNIVERSAL SECTION STYLES
 
 .section .img-responsive {
     margin: 0 auto;
+    margin-top: 2%;
 }
 
 .section .dark-mask {
@@ -974,7 +975,6 @@ strong {
 .navbar-default .navbar-brand {
     color: red;
     font-family: 'Bowlby One SC', cursive;
-    
 }
 
 .navbar-default .navbar-brand:hover,
@@ -1087,7 +1087,7 @@ body {
 }
 
 a {
-    color: #6aae7a;
+    color: red;
     text-decoration: none;
 }
 
