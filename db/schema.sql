@@ -1,10 +1,8 @@
--- @author: Thomas Thompson
--- @github: tomtom28
--- @comment: Homework 14 - Eat the Burger!
+
 
 
 -- Database Creation
-CREATE DATABASE IF NOT EXISTS DBName exercise_db;
+CREATE DATABASE IF NOT EXISTS exercise_db;
 USE exercise_db;
 -- Table Creation
 CREATE TABLE training(

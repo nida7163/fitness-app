@@ -1,9 +1,7 @@
--- @author: Thomas Thompson
--- @github: tomtom28
--- @comment: Homework 14 - Eat the Burger!
 
 
-INSERT INTO training(id,workout, sets, rep1, rep2, rep3, KilledIt, date)
+
+INSERT INTO training(id,workout, sets, rep1, rep2, rep3, KilledIt, date) 
 VALUES (id,"Dumbbell Bench Press", 3, 8, 10, 12, false, "2016-11-05 04:20:00");
 INSERT INTO training VALUES(id,"Lat Pulldown", 3, 8, 10, 12, false, "2016-11-05 04:20:00");
 INSERT INTO training VALUES (id,"Overhead Dumbbell Press", 3, 8, 10, 12, false, "2016-11-05 04:20:00");

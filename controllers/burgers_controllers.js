@@ -29,7 +29,7 @@ router.get('/index', function(req, res) {
 
 
 // Create a New Burger
-router.post('/exrercise_db/training/create', function(req, res) {
+router.post('/exercise_db/training/create', function(req, res) {
     burger.insertOne(req.body.workout, req.body.workout, req.body.sets, req.body.rep1, req.body.rep2, req.body.rep3,
         function() {
             res.redirect('/index');
@@ -38,7 +38,7 @@ router.post('/exrercise_db/training/create', function(req, res) {
 
 
 // Devour a Burger
-router.post('/exrercise_db/training:id', function(req, res) {
+router.post('/exercise_db/training:id', function(req, res) {
     burger.updateOne(req.params.id, function() {
         res.redirect('/index');
     });

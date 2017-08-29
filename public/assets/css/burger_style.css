@@ -20,6 +20,7 @@ img {
 
 .red_font {
     color: red;
+    font-size: 30px;
 }
 
 .btn-info {
@@ -38,4 +39,9 @@ img {
     color: red;
     background-color: black;
     border-color: #d43f3a;
+}
+
+.red_font_plan {
+    font-size: 40px;
+    color: red;
 }
