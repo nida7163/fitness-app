@@ -8,17 +8,17 @@
   <center>
     <!-- Left side (ready to eat) -->
     <div class="col-md-6">
-      <h4 class="red_font">Ready to eat!</h4>
+      <h4 class="red_font">Ready to Workout!</h4>
       <div id="ready_to_eat">
 
         <!-- Dynamically Insert Ready Burgers Here -->
         {{#each workout}}
           {{#unless KilledIt}}
-          <form action="burger/eat/{{id}}" method="POST">
+          <form action="workout/eat/{{id}}" method="POST">
             <div class="input-group">
-              <li class="form-control">{{id}}. {{burger_name}}</li>
+              <li class="form-control">{{id}}. {{workout}}</li>
                 <span class="input-group-btn">
-                  <button class="btn btn-success devour-button" type="submit">Devour It!</button>
+                  <button class="btn btn-success devour-button" type="submit">Kill It!</button>
                 </span>
             </div>
           </form>
@@ -30,16 +30,16 @@
 
     <!-- Right side (already eaten) -->
     <div class="col-md-6">
-      <h4 class="red_font">Already eaten!</h4>
+      <h4 class="red_font">Demolished It!</h4>
       <div id="already_eaten">
 
         <!-- Dynamically Insert Eaten Burgers Here -->
-        {{#each burgers}}
-          {{#if this.devoured}}
+        {{#each workout}}
+          {{#if this.KilledIt}}
             <div class="input-group">
-              <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
+              <li class="form-control">{{this.id}}. {{this.workout}}</li>
               <span class="input-group-btn">
-                <button class="btn btn-info whine-button" type="button">Whine!</button>
+                <button class="btn btn-info whine-button" type="button">Demolished It!</button>
               </span>
             </div>
           {{/if}}

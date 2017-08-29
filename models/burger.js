@@ -9,28 +9,28 @@ var orm = require('../config/orm.js');
 
 
 // create the code that will call the ORM functions using burger specific input for the ORM.
-var burger = {
+var training = {
 
-  selectAll: function(callback){
-    orm.selectAll(function(res){
-      callback(res);
-    });
-  },
+    selectAll: function(callback) {
+        orm.selectAll(function(res) {
+            callback(res);
+        });
+    },
 
-  insertOne: function(burger_name, callback){
-    orm.insertOne(burger_name, function(res){
-      callback(res);
-    });
-  },
+    insertOne: function(workout, sets, rep1, rep2, rep3, KilledIt, date, callback) {
+        orm.insertOne(workout, sets, rep1, rep2, rep3, KilledIt, date, function(res) {
+            callback(res);
+        });
+    },
 
-  updateOne: function(burger_id, callback){
-    orm.updateOne(burger_id, function(res){
-      callback(res);
-    });
-  }
+    updateOne: function(workout, sets, rep1, rep2, rep3, KilledIt, date, callback) {
+        orm.updateOne(workout, sets, rep1, rep2, rep3, KilledIt, date, function(res) {
+            callback(res);
+        });
+    }
 
 };
 
 
 // Export at the end of the burger.js file.
-module.exports = burger;
+module.exports = training;

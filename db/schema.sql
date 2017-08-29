@@ -4,7 +4,7 @@
 
 
 -- Database Creation
-CREATE DATABASE exercise_db;
+CREATE DATABASE IF NOT EXISTS DBName exercise_db;
 USE exercise_db;
 -- Table Creation
 CREATE TABLE training(

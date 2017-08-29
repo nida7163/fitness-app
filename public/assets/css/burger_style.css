@@ -1,0 +1,41 @@
+body {
+    background: url("/Users/geraldperriman/Desktop/nolimits-fitness-app/public/assets/img/gym.jpg");
+    font-family: 'Baloo Tammudu', cursive;
+}
+
+img {
+    width: 15%;
+}
+
+.red_font {
+    color: #bc001f;
+}
+
+.red_font_h1 {
+    font-family: 'Seymour One', sans-serif;
+    color: red;
+    font-size: 120px;
+    text-shadow: 4px 4px 2px rgba(255, 255, 255, 1);
+}
+
+.red_font {
+    color: red;
+}
+
+.btn-info {
+    color: red;
+    background-color: black;
+    border-color: red;
+}
+
+.btn-success {
+    color: black;
+    background-color: red;
+    border-color: black;
+}
+
+.btn-danger {
+    color: red;
+    background-color: black;
+    border-color: #d43f3a;
+}
