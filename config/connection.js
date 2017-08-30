@@ -16,7 +16,7 @@ if (process.env.JAWSDB_URL) {
         host: 'localhost',
         user: 'root',
         password: 'root', // Add your password
-        database: 'exercise_db' // Add your database
+        database: 'burgers_db' // Add your database
     });
 }
 

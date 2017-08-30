@@ -7,7 +7,8 @@
 // Node Dependencies
 var express = require('express');
 var bodyParser = require('body-parser');
-var methodOverride = require('method-override')
+var methodOverride = require('method-override');
+
 
 var app = express();
 //Serve static content for the app from the "public" directory in the application directory.
@@ -21,6 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
+app.use(express.static('public/assets/img'));
 
 
 var router = require('./controllers/burgers_controllers.js');
