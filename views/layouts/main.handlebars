@@ -37,7 +37,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                <a class="navbar-brand scrollTo" href="#intro">NO LIMIT</a>
+                <a class="navbar-brand scrollTo" href="#intro">NO LIMITS</a>
             </div>
 
             <div class="navbar-collapse collapse" id="navigation">
@@ -45,13 +45,13 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#intro">Home</a>
                     </li>
-                    <li><a href="Sign">Workouts</a>
+                    <li><a href="#">Workouts</a>
                     </li>
-                    <li><a href="#section2">About us</a>
+                    <li><a href="#">About Us</a>
                     </li>
-                    <li><a href="#section3">Testimonials</a>
+                    <li><a href="#">Testimonials</a>
                     </li>
-                    <li><a href="#section4">Contact</a>
+                    <li><a href="#">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -100,9 +100,7 @@
       <!-- Page Title -->
        <center>
             <h1 class=" animated lightSpeedIn red_font_h1">No Limits</h1>
-        </center>
-      <br>
-      
+        </center>      
 
       <!-- Input New Burgers Form -->
       <form action="burger/create" method="POST"> 
@@ -114,7 +112,11 @@
 
           <!-- Burger Input Box -->
           <div class="form-group col-md-6">
-            <center><label for="new_burger" class="red_font">Enter Your Workout Plan!</label></center>
+            <center><label for="new_burger" class="red_font">
+            <br>
+            A workout junkie's BFF.<br><br>
+            <h4>To get started, enter your workout plan below.</h4>
+            </label></center>
             <textarea class="form-control" columns="8" rows="4" id="new_burger" name="burger_name"></textarea>
           </div>
 
@@ -127,6 +129,8 @@
         <!-- Submit Button -->
         <center>
           <button id="submit-button" type="submit" class="btn btn-danger">Start Workout</button>
+          <br><br>
+
         </center>
 
       </form>
@@ -142,6 +146,7 @@
       <br>
 
     </div>
+
 
     <!-- Link in jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>

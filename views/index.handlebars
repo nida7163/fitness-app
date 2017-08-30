@@ -4,7 +4,7 @@
   <center>
     <!-- Left side (ready to eat) -->
     <div class="col-md-6">
-      <h4 class="red_font">Ready to Workout!</h4>
+      <h4 class="red_font">Workouts To Do</h4>
       <div id="ready_to_eat">
 
         <!-- Dynamically Insert Workouts Here -->
@@ -14,7 +14,7 @@
             <div class="input-group">
               <li class="form-control">{{id}}. {{burger_name}}</li>
                 <span class="input-group-btn">
-                  <button class="btn btn-success devour-button" type="submit">Killed It!</button>
+                  <button class="btn btn-success devour-button" type="submit">I'M DONE!</button>
                 </span>
             </div>
           </form>
@@ -26,7 +26,7 @@
 
     <!-- Right side (already eaten) -->
     <div class="col-md-6">
-      <h4 class="red_font">Already completed!</h4>
+      <h4 class="red_font">Completed Workouts</h4>
       <div id="already_eaten">
 
         <!-- Dynamically Insert Completed Workouts Here -->
@@ -35,7 +35,7 @@
             <div class="input-group">
               <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
               <span class="input-group-btn">
-                <button class="btn btn-info whine-button" type="button">Woohoo!</button>
+                <button class="btn btn-info whine-button" type="button">WORKOUT SAVED</button>
               </span>
             </div>
           {{/if}}
