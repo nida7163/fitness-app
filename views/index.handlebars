@@ -1,8 +1,3 @@
-<!-- @author: Thomas Thompson
-@github: tomtom28
-@comment: Homework 14 - Eat the Burger!
- -->
-
 
 <div class="row">
   <center>
@@ -11,14 +6,14 @@
       <h4 class="red_font">Ready to Workout!</h4>
       <div id="ready_to_eat">
 
-        <!-- Dynamically Insert Ready Burgers Here -->
+        <!-- Dynamically Insert Workouts Here -->
         {{#each burgers}}
           {{#unless devoured}}
           <form action="burger/eat/{{id}}" method="POST">
             <div class="input-group">
               <li class="form-control">{{id}}. {{burger_name}}</li>
                 <span class="input-group-btn">
-                  <button class="btn btn-success devour-button" type="submit">Kill It!</button>
+                  <button class="btn btn-success devour-button" type="submit">Killed It!</button>
                 </span>
             </div>
           </form>
@@ -30,16 +25,16 @@
 
     <!-- Right side (already eaten) -->
     <div class="col-md-6">
-      <h4 class="red_font">Already eaten!</h4>
+      <h4 class="red_font">Already completed!</h4>
       <div id="already_eaten">
 
-        <!-- Dynamically Insert Eaten Burgers Here -->
+        <!-- Dynamically Insert Completed Workouts Here -->
         {{#each burgers}}
           {{#if this.devoured}}
             <div class="input-group">
               <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
               <span class="input-group-btn">
-                <button class="btn btn-info whine-button" type="button">Whine!</button>
+                <button class="btn btn-info whine-button" type="button">Woohoo!</button>
               </span>
             </div>
           {{/if}}

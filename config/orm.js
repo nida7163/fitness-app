@@ -1,9 +1,3 @@
-// @author: Thomas Thompson
-// @github: tomtom28
-// @comment: Homework 14 - Eat the Burger!
-
-
-
 // Import Node Dependencies
 var connection = require('./connection.js');
 
