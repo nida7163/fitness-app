@@ -5,6 +5,8 @@
   <head>
     <!-- Tab Title -->
      <title>No Limits! A Fitness App</title>
+     <!-- Sign up -->
+         <link rel="stylesheet" href="/assets/css/signup.css">
     <!-- Tab Image -->
     <link rel="icon" href="/assets/img/arm.png">
     <!-- Latest compiled and minified CSS -->
@@ -15,8 +17,73 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Seymour+One" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+
+
+</head>
   </head>
   <body>
+  <!-- *** NAVBAR ***
+        _________________________________________________________ -->
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand scrollTo" href="#intro">NO LIMIT</a>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navigation">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#intro">Home</a>
+                    </li>
+                    <li><a href="Sign">Workouts</a>
+                    </li>
+                    <li><a href="#section2">About us</a>
+                    </li>
+                    <li><a href="#section3">Testimonials</a>
+                    </li>
+                    <li><a href="#section4">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+
+        </div>
+    </div>
+    <!-- /#navbar -->
+
+    <!-- *** NAVBAR END *** -->
+
+
+    <div id="all">
+
+
+        <!-- *** INTRO IMAGE ***
+        _________________________________________________________ -->
+        <div id="intro" class="clearfix">
+            <div class="item">
+                <div class="container">
+                    <div class="row">
+
+                        <h1 data-animate="fadeInDown">No Limits!</h1>
+                        <p class="message" data-animate="fadeInUp"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- *** INTRO IMAGE END *** -->
+
   
     <!-- Page Container -->
     <div class="container">
@@ -36,12 +103,6 @@
         </center>
       <br>
       
-
-      <!-- Burger Content from index.handlebars -->
-      {{{body}}}
-
-
-      <br><br>
 
       <!-- Input New Burgers Form -->
       <form action="burger/create" method="POST"> 
@@ -69,6 +130,14 @@
         </center>
 
       </form>
+
+
+      <!-- Burger Content from index.handlebars -->
+      {{{body}}}
+
+
+
+      <br><br>
 
       <br>
 
