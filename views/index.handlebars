@@ -8,11 +8,11 @@
       <div id="ready_to_eat">
 
         <!-- Dynamically Insert Workouts Here -->
-        {{#each burgers}}
+        {{#each workouts}}
           {{#unless devoured}}
-          <form action="burger/eat/{{id}}" method="POST">
+          <form action="workout/eat/{{id}}" method="POST">
             <div class="input-group">
-              <li class="form-control">{{id}}. {{burger_name}}</li>
+              <li class="form-control">{{id}}. {{workout_name}}</li>
                 <span class="input-group-btn">
                   <button class="btn btn-success devour-button" type="submit">I'M DONE!</button>
                 </span>
@@ -30,10 +30,10 @@
       <div id="already_eaten">
 
         <!-- Dynamically Insert Completed Workouts Here -->
-        {{#each burgers}}
+        {{#each workouts}}
           {{#if this.devoured}}
             <div class="input-group">
-              <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
+              <li class="form-control">{{this.id}}. {{this.workout_name}}</li>
               <span class="input-group-btn">
                 <button class="btn btn-info whine-button" type="button">WORKOUT SAVED</button>
               </span>

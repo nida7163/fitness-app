@@ -1,6 +1,4 @@
-// @author: Thomas Thompson
-// @github: tomtom28
-// @comment: Homework 14 - Eat the Burger!
+
 
 
 
@@ -16,7 +14,7 @@ if (process.env.JAWSDB_URL) {
         host: 'localhost',
         user: 'root',
         password: '', // Add your password
-        database: 'burgers_db' // Add your database
+        database: 'workouts_db' // Add your database
     });
 }
 

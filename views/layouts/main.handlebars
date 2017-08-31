@@ -12,7 +12,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Custom Styling -->
-    <link rel="stylesheet" href="/assets/css/burger_style.css">
+    <link rel="stylesheet" href="/assets/css/workout_style.css">
      <!-- CSS Animations -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Google Fonts -->
@@ -84,13 +84,13 @@
 
         <!-- *** INTRO IMAGE END *** -->
 
-  
+
     <!-- Page Container -->
     <div class="container">
-      
+
       <br>
 
-      <!-- Burger Image -->
+      <!-- workout Image -->
        <center>
             <div class="animated infinite bounce row">
                 <img src="/assets/img/arm.png">
@@ -100,32 +100,32 @@
       <!-- Page Title -->
        <center>
             <h1 class=" animated lightSpeedIn red_font_h1">No Limits</h1>
-        </center>      
+        </center>
 
-      <!-- Input New Burgers Form -->
-      <form action="burger/create" method="POST"> 
-        
+      <!-- Input New workouts Form -->
+      <form action="workout/create" method="POST">
+
         <!-- Text Area Input -->
         <div class="row">
           <!-- Empty Div to help center textarea -->
-          <div class="col-md-3"></div> 
+          <div class="col-md-3"></div>
 
-          <!-- Burger Input Box -->
+          <!-- workout Input Box -->
           <div class="form-group col-md-6">
-            <center><label for="new_burger" class="red_font">
+            <center><label for="new_workout" class="red_font">
             <br>
             A workout junkie's BFF.<br><br>
             <h4>To get started, enter your workout plan below.</h4>
             </label></center>
-            <textarea class="form-control" columns="8" rows="4" id="new_burger" name="burger_name"></textarea>
+            <textarea class="form-control" columns="8" rows="4" id="new_workout" name="workout_name"></textarea>
           </div>
 
-  
+
 
           <!-- Empty Div to help center textarea -->
-          <div class="col-md-3"></div> 
+          <div class="col-md-3"></div>
         </div>
-      
+
         <!-- Submit Button -->
         <center>
           <button id="submit-button" type="submit" class="btn btn-danger">Start Workout</button>
@@ -136,7 +136,7 @@
       </form>
 
 
-      <!-- Burger Content from index.handlebars -->
+      <!-- workout Content from index.handlebars -->
       {{{body}}}
 
 
@@ -152,7 +152,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
     <!-- Link in Local JavaScript (for sound effects) -->
-    <script src="/assets/javascript/burger_sounds.js"></script>
+    <script src="/assets/javascript/workout_sounds.js"></script>
 
   </body>
 </html>

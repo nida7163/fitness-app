@@ -22,7 +22,7 @@ app.set('view engine', 'handlebars');
 app.use(express.static('public/assets/img'));
 
 
-var router = require('./controllers/burgers_controllers.js');
+var router = require('./controllers/workouts_controllers.js');
 app.use('/', router);
 
 // Open Server

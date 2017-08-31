@@ -23,7 +23,7 @@ var orm = {
   selectAll: function(callback) {
 
     // Run MySQL Query
-    connection.query('SELECT * FROM burgers', function (err, result) {
+    connection.query('SELECT * FROM workouts', function (err, result) {
       if (err) throw err;
       callback(result);
     });
@@ -31,7 +31,7 @@ var orm = {
   },
 
   // insertOne()
-  insertOne: function(burger_name, callback){
+  insertOne: function(workout_name, callback){
 
     // Create a new timestamp
     // ----------------------------------------------------------
@@ -70,8 +70,8 @@ var orm = {
     // ----------------------------------------------------------
 
     // Run MySQL Query
-    connection.query('INSERT INTO burgers SET ?', {
-      burger_name: burger_name,
+    connection.query('INSERT INTO workouts SET ?', {
+      workout_name: workout_name,
       devoured: false,
       date: timestamp
     }, function (err, result) {
@@ -82,10 +82,10 @@ var orm = {
   },
 
   // updateOne()
-  updateOne: function(burgerID, callback){
+  updateOne: function(workoutID, callback){
 
     // Run MySQL Query
-    connection.query('UPDATE burgers SET ? WHERE ?', [{devoured: true}, {id: burgerID}], function (err, result) {
+    connection.query('UPDATE workouts SET ? WHERE ?', [{devoured: true}, {id: workoutID}], function (err, result) {
         if (err) throw err;
         callback(result);
       });

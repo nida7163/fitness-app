@@ -1,13 +1,13 @@
 
 -- Database Creation
-CREATE DATABASE burgers_db;
+CREATE DATABASE workouts_db;
 
-USE burgers_db;
+USE workouts_db;
 
 
 -- Table Creation
-CREATE TABLE burgers(
+CREATE TABLE workouts(
 id INTEGER AUTO_INCREMENT PRIMARY KEY,
-burger_name VARCHAR(50),
+workout_name VARCHAR(50),
 devoured BOOLEAN,
 date TIMESTAMP);
