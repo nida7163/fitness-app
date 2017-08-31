@@ -1,24 +1,30 @@
 {
-  "name": "nolimits-fitness-app",
+  "name": "burger",
   "version": "1.0.0",
-  "description": "no-limits-fitness-app",
-  "main": "server.js",
-  "dependencies": {
-    "handlebars": "^4.0.10"
-  },
-  "devDependencies": {},
+  "description": "Eat the Burger! A MySQL, Node, Express, Handlebars restaurant app that lets users input the names of burgers they'd like to eat.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "4.1.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nida7163/nolimits-fitness-app.git"
+    "url": "git+https://github.com/tomtom28/burger.git"
   },
-  "author": "",
+  "author": "tomtom28",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nida7163/nolimits-fitness-app/issues"
+    "url": "https://github.com/tomtom28/burger/issues"
   },
-  "homepage": "https://github.com/nida7163/nolimits-fitness-app#readme"
+  "homepage": "https://github.com/tomtom28/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.10",
+    "method-override": "^2.3.6",
+    "mysql": "^2.12.0"
+  }
 }
