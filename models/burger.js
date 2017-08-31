@@ -1,8 +1,3 @@
-// @author: Thomas Thompson
-// @github: tomtom28
-// @comment: Homework 14 - Eat the Burger!
-
-
 
 // Node Dependency
 var orm = require('../config/orm.js');
